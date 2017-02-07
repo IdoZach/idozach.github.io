@@ -1,0 +1,52 @@
+<html>
+<head> <title>SR examples</title> 
+
+<script>
+function but_orig() {
+	tar.src = "comp_orig.png";
+	tit.innerHTML = "Original image";
+}
+function but_nn() {
+	tar.src = "comp_nn.png";
+	tit.innerHTML = "Nearest-neighbour interpolation";
+}
+function but_bicubic() {
+	tar.src = "comp_bicubic.png";
+	tit.innerHTML = "Bicubic interpolation";
+}
+function but_lb() {
+	tar.src = "comp_example_based.png";
+	tit.innerHTML = "Example (learning)-based superresolution";
+}
+function but_our() {
+	tar.src = "comp_rec.png";
+	tit.innerHTML = "Our algorithm";
+}
+</script>
+
+</head>
+<h1> Algorithm example </h1> <h2>(work in progress)</h2>
+<table>
+<td width=270>
+<center>
+<span id=lr>Low-resolution</span><br>
+<img id=lrimg src=comp_lr.png>
+<p>
+<input style="width:230;height:50;" onclick="but_orig()" type=button value="Original image"> <br>
+<input style="width:230;height:50;" onclick="but_nn()" id=but_nn type=button value="Nearest-neighbour interpolation">  <br>
+<input style="width:230;height:50;" onclick="but_bicubic()" id=but_bicubic type=button value="Bicubic interpolation"> <br>
+<input style="width:230;height:50;" onclick="but_lb()" id=but_lb type=button value="Learning-based SR (Kim et al.)"> <br>
+<input style="width:230;height:50;" onclick="but_our()" id=but_our type=button value="Our algorithm"> <br>
+
+</center>
+
+<td width=512>
+<center>
+<span id=tit>Nearest-neighbour interpolation</span><br>
+<img id=tar src=comp_nn.png>
+</center>
+<td>
+</table>
+<p>
+<a href="http://tx.technion.ac.il/~ido">Back to the main page</a>
+</html>
