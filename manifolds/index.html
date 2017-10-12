@@ -1,0 +1,45 @@
+<html>
+<head><title>Manifolds of Natural Stochastic Textures</title>
+</head>
+<body>
+<h1>Manifolds of Natural Stochastic Textures</h1>
+
+<p>Supplementary material for: Ido Zachevsky and Yehoshua Y. Zeevi, <i>Manifold-based analysis of natural stochastic textures with application in texture synthesis</i>, submitted (2017).
+
+<p><a href=manifolds_code.zip>Code (Python)</a>
+
+<h3>Texture synthesis</h3>
+Synthesis of a new texture (middle) by two source textures (left and right columns)
+<p><img src=synthesis_interpolation.png>
+
+<h3>Synthesis of textures with reduced descriptor dimensions</h3>
+Original synthesis (Gatys et al., 2015)  (columns 1,2), and synthesis with order of magnitude less parameters (columns 3,4)
+<p><img src=theta_synthesis.png>
+
+<h3>Synthesis of textures with reduced descriptor dimensions</h3>
+The fundamental features Hurst, Kurtosis (indicates Gaussianity) and coherence (related to local phase) emerge naturally by the manifold.
+<p><img src=parameter_analysis.png>
+
+<h3>Traveling between two images in the manifold</h3>
+Intrinsic path (red) travels more gradually, within the manifold. Euclidean path shown in blue.
+<p><img src=path.png>
+<p>Top row: intrinsic path, bottom row: Euclidean path. Neighboring images are semantically closer in the intrinsic path.
+<p><img src=path_images.png>
+<p>First PCA coefficient (63% explained variance) of images in intrinsic path (red) vs. Euclidean path (blue). A more gradual path, corresponding to the images in the path.
+<p><img src=path_pca.png>
+
+
+<h3>Smoothness of parameters in the manifold</h3>
+Synthesized images exhibit continuous texture features within the manifold.
+<br>Images are synthesized for all values of 0 < &alpha; < 1 from two images: &alpha;=0 and &alpha;=1.
+<p><img src=parameter_smoothness.png>
+
+<h3>Intrinsic clustering: Metric K-means</h3>
+K-means with manifold-based distances yields better clustering.
+<p><img src=clustering.png>
+Cluster entropy (lower is better)
+<p><img src=clustering_table.png>
+
+
+</body>
+</html>
